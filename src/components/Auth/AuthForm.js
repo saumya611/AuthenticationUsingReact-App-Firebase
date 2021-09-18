@@ -27,9 +27,11 @@ const AuthForm = () => {
     const enteredPassword = passwordInputRef.current.value;
     let url;
     if (isLogin) {
-      url = 'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyAsmdLZQ-KJksd8ulL80jEiHs53vdEguKg'
+      //PUT YOUR OWN Web API Key (AUTH KEY) From FIREBASE Project Instead of [WEB_API_KEY]
+      // Path: =>From Project -> Click On Setting Icon On Top Left side Of Your Screen -> Project Settings -> You'll find Web API Key
+      url = 'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=[WEB_API_KEY]'
     } else {
-      url = 'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyAsmdLZQ-KJksd8ulL80jEiHs53vdEguKg'
+      url = 'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=[WEB_API_KEY]'
     }
     fetch(url,
       {
