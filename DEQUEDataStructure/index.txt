@@ -1,0 +1,5 @@
+deque data structure is 
+combination of 
+stack and queue in which 
+we can add and remove element 
+from both ends
